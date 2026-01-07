@@ -1,21 +1,21 @@
 return {
 	{
-		"navarasu/onedark.nvim",
+		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
 		config = function()
-			require("onedark").setup({
-				style = "warm",
+			require("gruvbox").setup({
+				contrast = "hard", -- "hard", "soft", or "" (medium)
 			})
-			require("onedark").load()
+			vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
-		depedencies = {
+		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
 		opts = {
-			theme = "onedark",
+			theme = "gruvbox",
 		},
 	},
 }
