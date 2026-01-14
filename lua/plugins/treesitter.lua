@@ -7,6 +7,7 @@ return {
         -- languages
         "lua",
         "go",
+        "java",
         "typescript",
         "sql",
         "python",
